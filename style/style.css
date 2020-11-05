@@ -1,0 +1,98 @@
+:root{
+/*## Colors
+### Primary
+*/
+--softblue: hsl(231, 69%, 60%);
+--softred: hsl(0, 94%, 66%);
+
+/*### Neutral*/
+
+--grayishblue: hsl(229, 8%, 60%);
+--verydarkblue: hsl(229, 31%, 21%);
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+} 
+body{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    max-width: 1440px; /*максимальный размер 1170пх*/
+    width: 100%; /*ширина блока*/
+    margin: 0 auto; /*выровниваем по центру*/
+    border: 1px solid var(--grayishblue);
+    
+}
+.container{   
+    max-width: 1100px; /*максимальный размер 1170пх*/
+    width: 100%; /*ширина блока*/
+    margin: 0 auto; /*выровниваем по центру*/
+    padding: 0px;
+    border: 1px solid var(--grayishblue);
+}
+.header__nav{
+    display: flex;
+   align-items: center;
+   
+    justify-content: space-between; /*justify-content определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси flex контейнера, или вдоль строчной оси grid контейнера.*/
+    margin: 50px 0;
+    
+}
+.header__nav ul{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin-left:  10px;
+    align-items: center;
+}
+    
+.nav__menu li{
+    margin-left: 40px;
+    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр).*/
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.nav__menu li:hover{
+    color: var(--softred);
+
+}
+
+
+ 
+.nav__btn{
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;    
+    background-color: var(--softred); 
+    border-radius: 5px;       
+    color: #ffffff;  
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    max-width: 1100px; /*максимальный размер 1170пх*/
+    width: 100%; /*ширина блока*/
+    margin: 0 auto; /*выровниваем по центру*/
+    padding: 0px;
+    border: 1px solid var(--grayishblue);
+}
+
+.main__imegs{
+    background: url(../img/illustration-hero.svg) no-repeat;
+    width: 100%;
+
+}

@@ -32,7 +32,6 @@ body{
     max-width: 1440px; /*максимальный размер 1170пх*/
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
-    border: 1px solid var(--grayishblue);
     font-weight: 400;
     
 }

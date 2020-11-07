@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
@@ -37,7 +37,7 @@
             <li><a href="#" class="nav__link"></a>Features</li>
             <li><a href="#" class="nav__link"></a>Pricing</li>
             <li><a href="#" class="nav__link"></a>Contact</li>
-            <li><button class="nav__btn">Login</button></li>
+            <li><button class="btn__login btn__red">Login</button></li>
           </ul>
         </div>
       </nav>
@@ -51,8 +51,8 @@
       <p>A clean and simple interface to organize your favourite websites. Open a new
         browser tab and see your sites load instantly. Try it for free.</p>
       <form class="main__form">
-        <button class="main__chrome">Get it on Chrome</button>
-        <button class="main__firefox">Get it on Firefox</button>
+        <button class="main__chrome btn__blue">Get it on Chrome</button>
+        <button class="main__firefox btn__grey">Get it on Firefox</button>
       </form>
     </div>
     <div class="main__imegs">
@@ -88,7 +88,7 @@
         <h2>Bookmark in one click</h2>
         <p> Organize your bookmarks however you like. Our simple drag-and-drop interface
           gives you complete control over how you manage your favourite sites.</p>
-        <button class="btn_info"> More Info</button>
+        <button class="btn__info btn__blue">More Info</button>
       </div>
     </div>
   </div>
@@ -105,19 +105,19 @@
           <img src="./img/logo-chrome.svg" alt="">
           <h3>Add to Chrome</h3>
           <p>Minimum version 62</p>
-          <button>Add & Install Extension</button>
+          <button class="btn__browser btn__blue">Add & Install Extension</button>
         </div>
         <div class="download__firefox">
           <img src="./img/logo-firefox.svg" alt="">
           <h3>Add to Firefox</h3>
           <p>Minimum version 55</p>
-          <button>Add & Install Extension</button>
+          <button class="btn__browser btn__blue">Add & Install Extension</button>
         </div>
         <div class="download__opera">
           <img src="./img/logo-opera.svg" alt="">
           <h3>Add to Opera</h3>
           <p>Minimum version 46</p>
-          <button>Add & Install Extension</button>
+          <button class="btn__browser btn__blue">Add & Install Extension</button>
         </div>
       </div>
 
@@ -181,7 +181,7 @@
       </div><!-- /.wedo -->
 
       <div class="question__button">
-        <button class="btn_info">More Info</button>
+        <button class="btn__info btn__blue">More Info</button>
       </div>
 
     </div>
@@ -192,14 +192,18 @@
 
   <!-------------------------------Question--------------------------->
   <!------------------------- subscribe-------------------------------->
-  <div class="container">
-    <div class="subscribe">
-      <p>35,000+ already joined</p>
-      <h2>Stay up-to-date with what we’re doing</h2>
-      <form>
-        <input type="email">
-        <button></button>
-      </form>
+  <div class="sub">
+    <div class="container">
+      <div class="subscribe--bacground">
+        <div class="subscribe">
+          <p>35,000+ already joined</p>
+          <h2>Stay up-to-date with what we’re doing</h2>
+          <form>
+            <input type="email" placeholder="Enter your email address">
+            <button class="btn__sub btn__red">Contact Us</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -210,22 +214,22 @@
   <div class="footer">
     <div class="container">
       <div class="flex">
-      <nav class="footer__menu">
-        <img src="./img/logo-bookmark.svg" alt="logo">
-        <ul>
-          <li><a href="#"></a>Features</li>
-          <li><a href="#"></a>Pricing</li>
-          <li><a href="#"></a>Contact</li>
-        </ul>
-      </nav>
-      <div class="footer_social">
-        <ul>
-          <li><a href="" class="square"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="" class="square"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="" class="square"><i class="fab fa-instagram"></i></a></li>
-        </ul>
+        <nav class="footer__menu">
+          <img src="./img/logo-bookmark-white.svg" alt="logo">
+          <ul>
+            <li><a href="#"></a>Features</li>
+            <li><a href="#"></a>Pricing</li>
+            <li><a href="#"></a>Contact</li>
+          </ul>
+        </nav>
+        <div class="footer_social">
+          <ul>
+            <li><a href="" class="square"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="" class="square"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="" class="square"><i class="fab fa-instagram-square"></i></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 

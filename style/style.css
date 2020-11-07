@@ -41,12 +41,13 @@ body{
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
     padding: 0px;
-    border: 1px solid var(--grayishblue);
+  /*   border: 1px solid var(--grayishblue); */
 }
 .container__smoll{
     max-width: 730px; /*максимальный размер 1170пх*/
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
+    margin-bottom: 110px;
 }
 /*-----------------header------------------------*/
 .header__nav{
@@ -79,7 +80,7 @@ body{
 
 
  
-.nav__btn{
+.btn__login{
     font-size: 18px;
     padding: 10px 30px 10px 30px;    
     background-color: var(--softred); 
@@ -87,7 +88,10 @@ body{
     color: #ffffff;  
     cursor: pointer;
     text-transform: uppercase;
+    border: 2px solid var(--softred); 
+    outline: none; /*убирает черный бордер при клике по кнопке*/
 }
+
 /*-----------------header------------------------*/
 /*-----------------main------------------------*/
 .main{
@@ -98,7 +102,7 @@ body{
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
     padding: 0px;
-    border: 1px solid var(--grayishblue);
+    margin-bottom: 150px;
 }
 
 .main__title{
@@ -121,20 +125,23 @@ body{
 .main__chrome, .main__firefox{
     font-size: 16px;
     padding: 10px 20px 10px 20px;    
-    border-radius: 2px;       
+    border-radius: 5px;       
     color: #ffffff;  
     cursor: pointer;
+    outline: none; 
     
 
 }
 .main__chrome{
     background-color: var(--softblue); 
     margin-right: 20px;
+    border: 2px solid var(--softblue);
 
 }
 
  .main__firefox{
     background-color: var(--grayishblue); 
+    border: 2px solid var(--grayishblue);
 
 }
 .main__chrome:hover{
@@ -195,6 +202,7 @@ ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 255px;
 }
 .bookmark__info{
     margin-left: 120px;
@@ -210,7 +218,7 @@ ul{
     margin-bottom: 30px;
 }  
 
-.btn_info{
+.btn__info{
     font-size: 16px;
     background-color: var(--softblue); 
     padding: 15px 20px;    
@@ -218,6 +226,8 @@ ul{
     color: #ffffff;  
     cursor: pointer;
     font-weight: 500;
+    border: 2px solid var(--softblue);
+    outline: none; /*убирает черный бордер при клике по кнопке*/
 }
 
 /*-----------------------Bookmark----------------------------------*/
@@ -225,8 +235,7 @@ ul{
 /*-----------------------Download----------------------------------*/
 .download__browser{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around;   
     text-align: center;
     margin-bottom: 160px;;
 }
@@ -257,7 +266,7 @@ ul{
     padding-top: 150px;
     padding-bottom: 0px;
 }
-.download__browser button{
+.btn__browser{
     font-size: 16px;
     background-color: var(--softblue); 
     padding: 15px 20px;    
@@ -265,7 +274,11 @@ ul{
     color: #ffffff;  
     cursor: pointer;
     font-weight: 500;
+    border: 2px solid var(--softblue);
+    outline: none; /*убирает черный бордер при клике по кнопке*/
 }
+
+
 
 /*-----------------------Download----------------------------------*/
 
@@ -277,6 +290,7 @@ ul{
     width: 100%; /*ширина блока*/
     margin: 0 auto; /*выровниваем по центру*/
     margin-bottom: 150px;
+    
 }
 .container__little h2{
     font-size: 30px;
@@ -310,8 +324,13 @@ ul{
 
 .accordion__item {
     margin-bottom: 10px;
-    border: 1px solid #e5e5e5;
+    border-top: 1px solid var(--grayishblue);
 }
+.accordion__item:last-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--grayishblue);
+}
+
 
 .accordion__item.active .accordion__content {
     display: block;
@@ -327,7 +346,7 @@ ul{
 }
 
 .accordion__header {
-    padding: 15px 20px 15px 65px;
+    padding: 15px 20px 15px 0px;
     position: relative;
 
     border-bottom: 1px solid transparent;
@@ -368,11 +387,75 @@ ul{
     text-transform: uppercase;
 }
 
-
+.question__button {
+    display: flex;
+    justify-content: center;
+   
+    
+}
 
 /*--------------------------------Question -----------------------*/
 
+/*----------------------- subscribe ------------------------------*/
+.sub{
+    background-color: var(--softblue);
+}
 
+
+
+.subscribe--bacground{
+    
+    color: #ffffff;
+    
+}
+.subscribe{
+
+    max-width: 445px; /*максимальный размер 445пх*/
+    width: 100%; /*ширина блока*/
+    margin: 0 auto; /*выровниваем по центру*/
+    padding-bottom: 70px;
+}
+.subscribe p{
+    text-transform: uppercase;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.subscribe h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+input{
+    flex: 0.7;
+    font-size: 18px;
+    padding: 12px 0; 
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btn__sub{
+    flex: 0.3;
+    font-size: 18px;
+    padding: 10px 0;    
+    background-color: var(--softred); 
+    border-radius: 5px;       
+    color: #ffffff;  
+    cursor: pointer;
+    margin-left: 10px;
+    border: 2px solid var(--softred);
+    outline: none; /*убирает черный бордер при клике по кнопке*/
+   
+}
+input::placeholder{
+    color: var(--grayishblue);
+    padding-left: 20px;
+}
+/*----------------------- subscribe ------------------------------*/
 
 
 
@@ -380,6 +463,11 @@ ul{
 
 
 /*--------------------------------footer -----------------------*/
+.footer{
+  background-color: var(--verydarkblue)  
+}
+
+
 .flex, .footer__menu, .footer_social{
     display: flex;
     justify-content: space-between;
@@ -387,7 +475,7 @@ ul{
 }
 .flex{
     height: 90px;
-    background-color: var(--verydarkblue);
+    ;
     color: #ffffff;
 }
 
@@ -399,15 +487,68 @@ ul{
   
 }
 
-.nav__menu li{
+
+.footer__menu img{
+    margin-right: 100px;
+}
+.footer_social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.footer__menu li{
     margin-left: 40px;
     text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр).*/
     cursor: pointer;
     font-size: 14px;
 
 }
-.nav__menu li:hover{
-    color: var(--softred);
-
+.fab{
+    margin-right: 20px;
+    color: #ffffff;
+    font-size: 24px;
 }
+
+.footer__menu li:hover, .fab:hover{
+    color: var(--softred);
+    
+}
+
 /*--------------------------------footer -----------------------*/
+
+
+/*--------------------hover--------------------------------*/
+/* .btn__red{
+    background-color: var(--softblue); 
+    padding: 15px 20px;    
+    border-radius: 4px;       
+    color: #ffffff;  
+    cursor: pointer;
+    font-weight: 500;
+    border: 2px solid var(--softblue);
+} */
+
+
+.btn__red:hover{
+    background-color: #ffffff; 
+          
+    color: var(--softred); 
+    border: 2px solid var(--softred);    
+}
+.btn__blue:hover{
+    background-color: #ffffff; 
+           
+    color: var(--softblue); 
+    border: 2px solid var(--softblue);    
+}
+
+.btn__grey:hover{
+    background-color: #ffffff; 
+          
+    color: var(--grayishblue); 
+    border: 2px solid var(--grayishblue);    
+}
+
+
+/*--------------------hover--------------------------------*/

@@ -300,7 +300,7 @@ ul{
 .container__little p{
     font-size: 16px;
     color:var(--grayishblue); 
-    margin-bottom: 30px;
+    margin-bottom: 65px;
     text-align: center;
 }
  .btn_info {
@@ -349,7 +349,7 @@ ul{
     padding: 15px 20px 15px 0px;
     position: relative;
 
-    border-bottom: 1px solid transparent;
+    /*border-bottom: 1px solid transparent;*/
     cursor: pointer;
 }
 

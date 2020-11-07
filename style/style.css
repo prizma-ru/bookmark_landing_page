@@ -380,15 +380,34 @@ ul{
 
 
 /*--------------------------------footer -----------------------*/
-.footer__icon{
+.flex, .footer__menu, .footer_social{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center; 
 }
-.icon{
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+.flex{
+    height: 90px;
+    background-color: var(--verydarkblue);
+    color: #ffffff;
 }
 
+
+.footer__menu ul, .footer_social ul{
+ 
+    list-style-type: none;
+    margin-left:  10px;
+  
+}
+
+.nav__menu li{
+    margin-left: 40px;
+    text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр).*/
+    cursor: pointer;
+    font-size: 14px;
+
+}
+.nav__menu li:hover{
+    color: var(--softred);
+
+}
 /*--------------------------------footer -----------------------*/
